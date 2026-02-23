@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %} Add Question {% endblock %}
+
+{% block content %}
+
+<form action="{{ url_for('main.add_ques') }}" method="POST"> 
+
+    <label>Enter the platform name here</label><br>
+    <input type="text" name="platform" placeholder="Enter the name of platform here">
+    <br>
+
+    <label>Enter the question number here</label><br>
+    <input type="text" name="ques_no" placeholder="Enter the question number here" required>
+    <br>
+
+    <label>Enter the question rating/difficulty here</label><br>
+    <input type="text" name="rating" placeholder="Enter the rating of question here">
+    <br>
+
+    <button type="submit" class="button">Add ➕</button>
+
+</form>
+
+{% endblock %}

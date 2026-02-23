@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %} Edit Ques {% endblock %}
+
+{% block content %}
+
+<h4>Edit your Question details here:</h4>
+<br>
+
+<form method="POST" action="{{ url_for('main.update', id=c.id) }}">
+
+    <label>Enter the platform name here</label><br>
+    <input type="text" name="platform" value="{{ c.platform }}">
+    <br>
+
+    <label>Enter the question number here</label><br>
+    <input type="text" name="ques_no" value="{{ c.ques_no }}" required>
+    <br>
+
+    <label>Enter the question rating/difficulty here</label><br>
+    <input type="text" name="rating" value="{{ c.rating }}">
+    <br>
+
+    <button type="submit" class="button">Update 👌</button>
+
+</form>
+
+{% endblock %}

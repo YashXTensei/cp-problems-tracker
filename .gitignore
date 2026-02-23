@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+instance/
+.env
+database.db
+test.db
+*.db

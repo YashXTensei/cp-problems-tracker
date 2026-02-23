@@ -1,0 +1,126 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+        }
+
+        /* 1. TOP SPACE KAM KIYA (margin-top 40px se 20px kar diya) */
+        .container {
+            max-width: 850px;
+            margin: 20px 0 40px 80px;   
+            padding: 20px;
+        }
+
+        /* 2. FONT SIZES BADHA DIYE */
+        h2 { margin-bottom: 10px; font-size: 32px; }
+        h3, h4 { margin-bottom: 15px; font-size: 24px; color: #333; }
+        p { font-size: 18px; color: #555; }
+        
+        a { text-decoration: none; }
+
+        .Content {
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+        }
+
+        .Content:hover { transform: translateY(-2px); }
+        .done { background-color: #e6f4ea; }
+
+        button {
+            cursor: pointer;
+            padding: 8px 16px;  
+            border-radius: 8px;
+            border: none;
+            font-size: 15px;
+            font-weight: 500;
+            margin-right: 8px;
+            transition: 0.2s ease;
+        }
+
+        button:hover { transform: scale(1.05); }
+
+        .edit-btn { background-color: #4da6ff; color: white; display: inline-block; padding: 8px 16px; border-radius: 8px; }
+        .edit-btn:hover { background-color: #1a8cff; }
+
+        .add-btn { background-color: #28a745; color: white; padding: 12px 20px; font-size: 18px; font-weight: 600; display: inline-block; margin-bottom: 20px; border-radius: 8px; }
+        .add-btn:hover { background-color: #1e7e34; transform: scale(1.05); display: inline-block; transition: 0.2s; }
+
+        .delete-btn { background-color: #ff4d4d; color: white; }
+        .delete-btn:hover { background-color: #e60000; }
+
+        .action-container { display: flex; justify-content: space-between; align-items: center; margin-top: 15px; }
+        .left-btns, .right-btns { display: flex; gap: 10px; align-items: center; }
+
+        /* 3. FORMS STYLING (Fonts, Spacing, Remove Resize) */
+        label {
+            font-size: 20px; /* Font size badha diya */
+            font-weight: bold;
+            color: #333;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            max-width: 450px;
+            padding: 15px; /* Box ke andar ka space badhaya */
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 18px; /* Box ke andar likhne wala font badhaya */
+            font-family: Arial, sans-serif;
+            margin-bottom: 40px; /* Inputs ke beech ka space kafi bada kar diya */
+            box-sizing: border-box;
+            resize: none; /* Wo drag wala nishan hata diya */
+        }
+
+        .button {
+            background-color: #f0ad4e;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .button:hover { background-color: #ec971f; transform: scale(1.05); }
+
+        .Content h3 { margin-top: 0; color: #333; font-size: 22px; }
+        .Content p { color: #555; font-size: 18px; margin: 5px 0; }
+
+        .icon-btn { background-color: #f0f0f0; padding: 8px 12px; border-radius: 50px; font-size: 16px; }
+        .icon-btn:hover { background-color: #ddd; }
+
+        /* 4. FLASH MESSAGES FIXED AT TOP RIGHT */
+        .flash-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .flash {
+            background-color: #2c3e50; /* Dark premium background */
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-left: 5px solid #4da6ff; /* Blue accent line */
+            font-size: 16px;
+            font-weight: bold;
+            animation: slideIn 0.4s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
