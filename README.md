@@ -1,4 +1,4 @@
-# 📊 Problems Tracker
+# 📊 CP Problems Tracker
 
 A structured Flask-based web application to track competitive programming problems (Codeforces, LeetCode, etc.).
 
