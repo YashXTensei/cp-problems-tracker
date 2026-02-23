@@ -48,10 +48,12 @@ README.md
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](assets/home.png)
+![Home Page]<img width="1897" height="910" alt="home png" src="https://github.com/user-attachments/assets/e3e1de6f-eb8e-4a01-8391-e4d55fa1433a" />
+
 
 ### Add Question Page
-![Add Page](assets/add.png)
+![Add Page]<img width="1918" height="905" alt="add png" src="https://github.com/user-attachments/assets/261bef87-034e-46fb-9ebe-6c2d31f7f70e" />
+
 
 ---
 
