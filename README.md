@@ -128,9 +128,3 @@ http://127.0.0.1:5000/
 
 Yash Mittal
 Competitive Programmer + Backend Learner 🚀
-<!-- git init
-git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
-git add .
-git commit -m "Full rebuild: new version with API and improvements"
-git branch -M main
-git push -f origin main -->
