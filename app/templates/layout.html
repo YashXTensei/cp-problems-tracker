@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %} </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+        
+</head>
+<body>
+
+    <div id="toast-container"></div>
+
+    <div id="flash-data" data-messages='{{ get_flashed_messages() | tojson }}'></div>
+
+     <script>
+        const flashData = document.getElementById("flash-data");
+
+        if (flashData) {
+            const messages = JSON.parse(flashData.dataset.messages);
+
+            messages.forEach(msg => {
+                showToast(msg);
+            });
+        }
+    </script>
+    <div class="container">
+        {% if current_user.is_authenticated %}
+            <nav>
+                {% if request.endpoint != "main.home" %}
+                    <a href="{{ url_for('main.home') }}" class = "add-btn">Home ⭐</a>
+                {% endif %}
+                <a href="{{url_for('main.add_ques')}}" class="add-btn"> Add Ques ➕ </a>
+                <a href="{{ url_for('main.dashboard') }}" class ="add-btn">Dashboard ↗️</a>
+                <form method="POST" action="{{ url_for('auth.logout') }}" style="display:inline;" onsubmit="return confirm('Are you sure you want to logout ?');">
+                    <button type="submit" class="add-btn">Logout 👋</button>
+                </form>
+            </nav>
+        {% endif %}
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>
