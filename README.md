@@ -18,6 +18,9 @@ This project evolved from a basic CRUD tracker into a **modular backend system w
 * Add, edit, delete problems
 * Track rating, difficulty, platform
 
+<img width="1292" height="873" alt="Screenshot 2026-03-20 233941" src="https://github.com/user-attachments/assets/0200c020-ca5c-4558-9f90-d64d0f28472b" />
+
+
 ### ⭐ Productivity Tools
 
 * Mark problems as Favorite ❤️
@@ -29,6 +32,8 @@ This project evolved from a basic CRUD tracker into a **modular backend system w
 * Filter by platform & difficulty
 * Sort by rating
 
+* <img width="1526" height="911" alt="Screenshot 2026-03-21 001654" src="https://github.com/user-attachments/assets/27de12b2-ecbf-4542-9aee-378163e86906" />
+
 ### 📊 Dashboard
 
 * Total problems
@@ -36,6 +41,8 @@ This project evolved from a basic CRUD tracker into a **modular backend system w
 * Favorite problems
 * Completion percentage
 * Last activity tracking
+
+* <img width="1784" height="895" alt="Screenshot 2026-03-21 010132" src="https://github.com/user-attachments/assets/8a3ac372-17fc-4600-b2b1-4b30c1eb5b71" />
 
 ### ⚡ Modern UI
 
