@@ -249,5 +249,4 @@ def delete(id):
     db.session.delete(c)
     db.session.commit()
 
-    flash("Deleted Successfully 👌")
-    return redirect(url_for("main.home"))
+    return jsonify({"status" : "success"})
