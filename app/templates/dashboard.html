@@ -1,18 +1,15 @@
 {% extends "layout.html" %}
-
 {% block title %} DashBoard {% endblock %}
+{% block content %}
 
-{% block content %} 
 <div class="dashboard-box">
-
-<h2 > Welcome user {{name}} , here is your Dashboard : </h2>
-<hr>
-<br>
-<h4> Total problems Added : {{total}} </h4>
-<h4> Total problems completed : {{completed}} </h4>
-<h4> Fav problems : {{fav}} </h4>
-<h4> Total percentage : {{percent}} %</h4>
-<h4> Last problem submitted at : {{last_seen}} </h4>
-
+    <h2>Welcome user {{name}}, here is your Dashboard:</h2>
+    <hr><br>
+    <h4>Total problems Added: {{total}}</h4>
+    <h4>Total problems completed: {{completed}}</h4>
+    <h4>Fav problems: {{fav}}</h4>
+    <h4>Total percentage: {{percent}}%</h4>
+    <h4>Last problem submitted at: {{last_seen}}</h4>
 </div>
+
 {% endblock %}

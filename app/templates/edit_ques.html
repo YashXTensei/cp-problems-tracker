@@ -24,9 +24,9 @@
         <select name="difficulty">
 
             <option value="">Select Difficulty</option>
-            <option value="Easy">Easy</option>
-            <option value="Medium">Medium</option>
-            <option value="Hard">Hard</option>
+            <option value="Easy" {% if c.difficulty == "Easy" %} selected {% endif %}>Easy</option>
+            <option value="Medium" {% if c.difficulty == "Medium" %} selected {% endif %} >Medium</option>
+            <option value="Hard" {% if c.difficulty == "Hard" %} selected {% endif %}>Hard</option>
 
         </select>
     <button type="submit" class="button">Update 👌</button>

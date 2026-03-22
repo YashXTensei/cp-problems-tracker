@@ -20,6 +20,10 @@ async function handleFavorite(btn) {
 
     try {
         const res = await fetch(`/toggle-fav/${id}`, { method: "POST" });
+        if (!res.ok) {
+            showToast("Something went wrong! 😵", "error");
+            return;
+        }
         const data = await res.json();
 
         if (data.is_fav) {
@@ -40,6 +44,10 @@ async function handleComplete(btn) {
 
     try {
         const res = await fetch(`/toggle-completed/${id}`, { method: "POST" });
+        if (!res.ok) {
+            showToast("Something went wrong! 😵", "error");
+            return;
+        }
         const data = await res.json();
 
         let card = btn.closest(".Content");
@@ -66,6 +74,11 @@ async function handleDelete(btn) {
 
     try {
         const res = await fetch(`/delete/${id}`, { method: "POST" });
+
+        if (!res.ok) {
+            showToast("Delete failed! 😵", "error");
+            return ;
+        }
         const data = await res.json();
 
         if (data.status === "success") {
@@ -73,6 +86,6 @@ async function handleDelete(btn) {
             showToast("Deleted Successfully 👌");
         }
     } catch (err) {
-        showToast("Delete failed! 😵", "error");
+        showToast("Network error ! 😵", "error");
     }
 }
