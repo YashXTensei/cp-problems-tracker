@@ -22,7 +22,7 @@ def login():
         else:
             flash("Invalid email or password")
 
-    return render_template("login.html")
+    return render_template("index.html")
 
 
 @auth.route("/register", methods=["GET", "POST"])
